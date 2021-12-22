@@ -34,10 +34,10 @@ const data = {
 };
 
 const jsonData = JSON.stringify(data);
-const url = "https://us6.api.mailchimp.com/3.0/lists/91b638a781";
+const url = "mailchimpapi"; //add api link
 const options = {
   method: "POST",
-  auth: "jerryjos:8693acd1f1439f1957e7f95168578515-us6"
+  auth: "" //add api key
 }
 
 const request = https.request(url,options, function(response){
